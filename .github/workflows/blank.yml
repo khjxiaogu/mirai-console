@@ -24,12 +24,10 @@ jobs:
         run: ./gradlew clean
       - name: Gradle build
         run: ./gradlew build # if test's failed, don't publish
-      - name: Gradle :mirai-console:shadowJvmJar
-        run: ./gradlew :mirai-console:shadowJvmJar
       - name: Upload artifact
         uses: actions/upload-artifact@v1.0.0
         with:
          # Artifact name
           name: mirai-console
           # Directory containing files to upload
-          path: "mirai-console/build/libs/"
+          path: "./"

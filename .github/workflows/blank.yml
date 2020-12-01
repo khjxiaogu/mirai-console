@@ -32,4 +32,12 @@ jobs:
          # Artifact name
           name: mirai-console
           # Directory containing files to upload
-          path: "./"
+          path: "./backend/mirai-console/build/libs/"
+      - name: Upload artifact
+        uses: actions/upload-artifact@v1.0.0
+        with:
+         # Artifact name
+          name: mirai-terminal
+          # Directory containing files to upload
+          path: "./frontend/mirai-console-terminal/build/libs/"
+      

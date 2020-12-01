@@ -32,4 +32,4 @@ jobs:
          # Artifact name
           name: mirai-console
           # Directory containing files to upload
-          path: "./build/libs/"
+          path: "./"
